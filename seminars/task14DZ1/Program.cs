@@ -1,24 +1,19 @@
-﻿Console.Write("Введите число:  "); 
-string? inputLine = Console.ReadLine();
-string? outputLine = Console.ReadLine();
+﻿string? inputLine = Console.ReadLine();
 
-
-if(inputLine != null);
+if(inputLine != null );
 {   
-    int inputNumber = int.Parse(inputLine);
-    int outputNumber = int.Parse(inputLine);
-    int outputNumber = inputNumber%2;
+     int inputNumber = int.Parse(inputLine);
     
-     if(outputNumber =0)
+        
+    if(inputNumber%2 == 0)  
     {
         Console.WriteLine("Да - чётное");
-    }   
-        
+    }       
     else
     {
         Console.WriteLine("Да - нечётное");
     }         
-        
+    
               
     
 }
