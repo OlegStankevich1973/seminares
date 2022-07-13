@@ -3,32 +3,19 @@
 if(inputLine != null);
 {
     int inputNumber = int.Parse(inputLine);
-
-    int startNumber = 1;
-
+// строка 7 первоначальный номер ряда
+    int startNumber = 1; 
+// строка 9 число 0 в ряду, введен принудительно
     string lineOutput = "0";
-    
-    // if( startNumber%2 == 0)
-    // {
-    //     Console.WriteLine(startNumber);
-    // }
-    // else
-    // {
-    //     Console.WriteLine();
-    // }
-    while (startNumber <= inputNumber)
+       
+        while (startNumber <= inputNumber)
     {
-        lineOutput = lineOutput+", "+startNumber;
-        startNumber++;
+        if(startNumber%2 == 0)
+   
+    lineOutput =lineOutput+","+startNumber;
+    startNumber++;
     }
-     if( startNumber%2 == 0)
-    {
-        Console.WriteLine(startNumber);
-    }
-    else
-    {
-        Console.WriteLine();
-    }
+   
 
     Console.WriteLine(lineOutput);
 
