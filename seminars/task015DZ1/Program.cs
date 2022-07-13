@@ -8,11 +8,12 @@ if(inputLine != null);
 // строка 9 число 0 в ряду, введен принудительно
     string lineOutput = "0";
        
-        while (startNumber <= inputNumber)
+    while (startNumber <= inputNumber)
     {
         if(startNumber%2 == 0)
    
     lineOutput =lineOutput+","+startNumber;
+    
     startNumber++;
     }
    
