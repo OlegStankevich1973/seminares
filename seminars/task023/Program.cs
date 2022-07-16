@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Input number: ");
+﻿Console.Write("Input number: ");
+string? inputOne = Console.ReadLine();
 string reminderSearcher(string?str)
 {
     if(str!= null)
@@ -22,6 +23,7 @@ string reminderSearcher(string?str)
             return "Возникло исключение:" + e.Message;
         }
     }
+ 
     return "";
-}
-// Console.WriteLine("Input number: ");
+}    
+Console.WriteLine(reminderSearcher(inputOne));
