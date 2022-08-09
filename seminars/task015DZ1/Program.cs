@@ -1,6 +1,6 @@
 ﻿string? inputLine = Console.ReadLine();
 
-if(inputLine != null);
+if(inputLine != null)
 {
     int inputNumber = int.Parse(inputLine);
 // строка 7 первоначальный номер ряда

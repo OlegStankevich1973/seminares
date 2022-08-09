@@ -1,6 +1,6 @@
 ﻿string? inputLine = Console.ReadLine();
 
-if(inputLine != null);
+if(inputLine != null)
 {
     // создаем массив который разбивает число на цифры
 char[] M =inputLine.ToCharArray();
