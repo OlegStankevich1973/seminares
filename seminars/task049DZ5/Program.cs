@@ -55,7 +55,7 @@ void PrintIntArray(int[] inputArray)
 }
 //Метод решения задачи 34 
 
-// pfgecrftv ajhvbhjdfybt vfccbdf
+//запускаем метод создания массива со случайными числами
 int[] bufferArray = FillingArray();
 //выводим на печать этот массив
 PrintIntArray(bufferArray);
