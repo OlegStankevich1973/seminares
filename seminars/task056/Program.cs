@@ -40,6 +40,5 @@ int[] CopyArrayStandartTool(params int[] inputArray)
 }
 int[] testArray = FillingArray();
 PrintIntArray(testArray);
-
 int[] outArray = (int[])CopyArrayStandartTool(testArray);
 PrintIntArray(outArray);
