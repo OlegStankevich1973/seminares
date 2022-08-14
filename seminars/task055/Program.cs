@@ -6,7 +6,6 @@ Console.Write("Введите количество чисел в ряде Фиб
 int decemalNumber = ReadDecemalNumber();
 string outLine = Fibonnaci(decemalNumber);
 PrintAnswer(outLine);
-
 // метод  ввода 
 int ReadDecemalNumber()
 {
@@ -41,7 +40,6 @@ string Fibonnaci(int n)
     }
     return answer;
 }
-
 void PrintAnswer(string answer)
 {
     Console.WriteLine("Ряд Фибоначчи для заданного кол-ва чисел: " + answer);
