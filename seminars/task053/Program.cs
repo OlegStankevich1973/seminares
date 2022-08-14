@@ -11,7 +11,7 @@ int sideC = 0;
 ReadSides();
 // в метод TestTriangle вкладываем переменные sideA,sideB,sideC и передем результат
 //  в новую переменную bool res
-bool res = TestTriangle(sideA,sideB,sideC);
+bool res = TestTriangle(sideA, sideB, sideC);
 // выводим на печать с помощью метода PrintAnswer результат res
 PrintAnswer(res);
 
@@ -28,8 +28,8 @@ void ReadSides()
 // метод проверки получится ли треугольник с заданными сторонами
 bool TestTriangle(int num1, int num2, int num3)
 {
-    bool answer = ((num1 + num2 > num3) 
-    && (num2 + num3 > num1) 
+    bool answer = ((num1 + num2 > num3)
+    && (num2 + num3 > num1)
     && (num1 + num3 > num2)) ? true : false;
     // переменная answer = (условие)?значение1 true :значение2 false ;
     return answer;
