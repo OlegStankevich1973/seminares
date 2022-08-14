@@ -1,9 +1,4 @@
-﻿// //=================================================================================
-// // Задача 41: Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел 
-// больше 0 ввёл пользователь.
-// 0, 7, 8, -2, -2 -> 2
-// 1, -7, 567, 89, 223-> 3
-// //==================================================================================
+﻿
 //Метод возвращает массив заполненый случайными числами 
 int[] FillingArray(int arrayLength)
 {
@@ -51,9 +46,6 @@ int ColculateTask(int[] inputArray)
     return resultCount;
 }
 
-
 int[] buferArray = FillingArray(17);
 PrintIntArray(buferArray);
 Console.WriteLine("Количество подходящих элементов " + (ColculateTask(buferArray)));
-// int[] positivArray = ColculateTask();
-// Console.WriteLine(ColculateTask(positivArray));
