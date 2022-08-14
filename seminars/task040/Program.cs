@@ -8,13 +8,12 @@ void VariantNaive()
     while (i < 8 - 1)
     {
         // цифры массива 0 и 1(2 не входит) и запятые между ними
-        Console.Write(numberSintezator.Next(0,2)+",");
+        Console.Write(numberSintezator.Next(0, 2) + ",");
         i++;
     }
     // распечатываем последний элемент отдельно
-    Console.Write(numberSintezator.Next(0,2));
+    Console.Write(numberSintezator.Next(0, 2));
 
     Console.Write("]");
-
 }
 VariantNaive();
