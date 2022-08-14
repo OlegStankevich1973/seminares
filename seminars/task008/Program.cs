@@ -1,6 +1,6 @@
 ﻿string? inputLine = Console.ReadLine();
 
-if(inputLine != null)
+if (inputLine != null)
 {
     int inputNumber = int.Parse(inputLine);
 
@@ -10,7 +10,7 @@ if(inputLine != null)
 
     while (startNumber <= inputNumber)
     {
-        lineOutput = startNumber*(-1)+", "+lineOutput+", "+startNumber;
+        lineOutput = startNumber * (-1) + ", " + lineOutput + ", " + startNumber;
         startNumber++;
     }
 
