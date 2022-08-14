@@ -10,12 +10,11 @@ int[] FillingArray()
     System.Random numberSintezator = new System.Random();
     while (i < 12)
     {
-        outArray[i] = numberSintezator.Next(-100,100);
+        outArray[i] = numberSintezator.Next(-100, 100);
         i++;
     }
     return outArray;
 }
-
 //Метод печатает массив
 void PrintIntArray(int[] inputArray)
 {
@@ -36,10 +35,9 @@ void PrintIntArray(int[] inputArray)
 int[] CopyArrayStandartTool(params int[] inputArray)
 {
     int[] buferArray = new int[inputArray.Length];
-    inputArray.CopyTo(buferArray,0);
+    inputArray.CopyTo(buferArray, 0);
     return buferArray;
 }
-
 int[] testArray = FillingArray();
 PrintIntArray(testArray);
 
