@@ -11,7 +11,7 @@ int[] FillingArray(int arrayLength)
     System.Random numberSintezator = new System.Random();
     while (i < arrayLength)
     {
-        outArray[i] = numberSintezator.Next(-1000,1000);
+        outArray[i] = numberSintezator.Next(-1000, 1000);
         i++;
     }
     return outArray;
@@ -47,7 +47,7 @@ int[] ReverseNewArray(int[] array)
     {
         // берем первое число старого массива и создаем последнее число нового массива которое равно
         //  длина массива-1-индекс числа старого массива
-        newArray[length -1 - i] = array[i];
+        newArray[length - 1 - i] = array[i];
     }
     // возвращеем новый массив
     return newArray;
@@ -58,7 +58,7 @@ int[] ReverseSwapArray(int[] array)
     int length = array.Length;
     int buf;
     // проходим половину массива т к идем с двух сторон к центру
-    for (int i = 0; i < length/2; i++)
+    for (int i = 0; i < length / 2; i++)
     {
         //i=1
         // создаем буферное число = первому числу массива
@@ -77,7 +77,6 @@ int[] testArray = FillingArray(17);
 //  из массива, который получился в методе ReverseNewArray из массива testArray
 // создаем новый массива reversedArray
 int[] reversedArray = ReverseNewArray(testArray);
-
 PrintIntArray(testArray);
 PrintIntArray(reversedArray);
 // выводим на печать методом PrintIntArray массив testArray
