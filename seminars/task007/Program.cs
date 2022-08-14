@@ -1,10 +1,10 @@
 ﻿string? inputLine = Console.ReadLine();
 
-if(inputLine != null)
+if (inputLine != null)
 {
-int inputNumber = int.Parse(inputLine);
+    int inputNumber = int.Parse(inputLine);
 
-int outputNumber = inputNumber%10;
+    int outputNumber = inputNumber % 10;
 
-Console.WriteLine(outputNumber);
+    Console.WriteLine(outputNumber);
 }
