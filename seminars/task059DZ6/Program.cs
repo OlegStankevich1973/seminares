@@ -29,6 +29,7 @@ void VariantOne()
     Console.WriteLine("Введите значение K2");
     initNumberK2 = double.Parse(Console.ReadLine());
 }
+
 // метод подсчета X и Y
 void СalculationXY()
 {
