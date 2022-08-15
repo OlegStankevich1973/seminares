@@ -15,6 +15,7 @@ int[] FillingArray()
     }
     return outArray;
 }
+
 //Метод печатает массив
 void PrintIntArray(int[] inputArray)
 {
@@ -38,7 +39,9 @@ int[] CopyArrayStandartTool(params int[] inputArray)
     inputArray.CopyTo(buferArray, 0);
     return buferArray;
 }
+
 int[] testArray = FillingArray();
 PrintIntArray(testArray);
+
 int[] outArray = (int[])CopyArrayStandartTool(testArray);
 PrintIntArray(outArray);
