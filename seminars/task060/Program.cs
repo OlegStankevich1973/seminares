@@ -22,7 +22,6 @@ int[,] FillTwoDimArray(int countRow, int countColumn)
     }
     return outArray;
 }
-
 //метод для печати двумерного массива
 void PrintTwoDimArray(int[,] inputArray)
 {
@@ -53,7 +52,7 @@ void PrintColorTwoDimArray(int[,] inputArray)
 {
     int i = 0; int j = 0;
 
-    
+
     while (i < inputArray.GetLength(0))
     {
         j = 0;
@@ -61,19 +60,19 @@ void PrintColorTwoDimArray(int[,] inputArray)
         {
             // перед началом печати вводится оператор для цвета
             //  произвольно выбирает цвет из 16 цветов для печати элементов 
-            Console.ForegroundColor = col[new System.Random().Next(0,16)];
+            Console.ForegroundColor = col[new System.Random().Next(0, 16)];
             Console.Write(inputArray[i, j] + " ");//печатаем цветом
             Console.ResetColor(); //сброс цветной печати
             j++;
         }
-        
+
         //Console.Write("\n");
         Console.WriteLine();
         i++;
-        
+
     }
 
-    
+
 }
 
 int[,] twoDimArray = FillTwoDimArray(5, 8);
