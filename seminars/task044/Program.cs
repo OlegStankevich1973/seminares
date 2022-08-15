@@ -110,6 +110,6 @@ VariantNaive();
 Console.WriteLine("Naive time: {0} ms", Environment.TickCount - t);
 
 t = Environment.TickCount;
-//Вариант 2
+// Вариант 2
 VariantSimple();
 Console.WriteLine("Simple time: {0} ms", Environment.TickCount - t);
