@@ -19,7 +19,7 @@ int[] EnteringNumbers()//метод ввода с клавиатуры
     }
     return buferArr;//возвращаем массив
 }
-int СountNumbers(int[]inputArray)//метод подсчета чисел >0
+int СountNumbers(int[] inputArray)//метод подсчета чисел >0
 {
     int result = 0;//задаем начальное значение результата
     for (int i = 0; i < inputArray.Length; i++)// для (условие)(inputArray.Length длина массива строка 10)
@@ -43,7 +43,6 @@ void PrintIntArray(int[] inputArray)
     //Выводим элемент массива
     Console.WriteLine(inputArray[i]);
 }
-
 
 int[] enteringNumber = EnteringNumbers();//вкладываем в массив значения из массива в методе EnteringNumbers
 int num = СountNumbers(enteringNumber);//вкладываем в переменную значение результата из метода СountNumbers
