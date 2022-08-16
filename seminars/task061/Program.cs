@@ -76,11 +76,14 @@ void PrintColorTwoDimArray(int[,] inputArray)
 void UpdateTwoDimArray(ref int[,] inputArray)
 {
     int i = 0; int j = 0;
+    // проходим по строкам
     while (i < inputArray.GetLength(0))
     {
         j = 0;
+        // роходим по столбцам
         while (j < inputArray.GetLength(1))
         {
+            // складываем индексы строк и столбцов 
             inputArray[i, j] = i + j;
             j++;
         }
