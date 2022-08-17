@@ -15,7 +15,7 @@ int[,] FillTwoDimArray(int countRow, int countColumn)
         j = 0;
         while (j < countColumn)
         {
-            outArray[i, j] = numberSyntezator.Next(0, 101);
+            outArray[i, j] = numberSyntezator.Next(0, 10);
             j++;
         }
         i++;
