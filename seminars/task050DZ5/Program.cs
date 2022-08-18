@@ -38,13 +38,13 @@ void ColculateTask(int[] outArray)
     }
 }
 
+
 //Выводим результат на кансоль
 void PrintResult()
 {
     Console.WriteLine(sumOddElements);
 
 }
-
 //Метод печатает массив
 void PrintIntArray(int[] outArray)
 {
