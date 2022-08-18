@@ -56,7 +56,6 @@ void PrintColorTwoDimArray(double[,] inputArray)
 {
     int i = 0; int j = 0;
 
-
     while (i < inputArray.GetLength(0))
     {
         j = 0;
@@ -67,20 +66,15 @@ void PrintColorTwoDimArray(double[,] inputArray)
             Console.ForegroundColor = col[new System.Random().Next(0, 16)];
             Console.Write(inputArray[i, j] + "\t");//печатаем цветом в виде таблицы \t
             Console.ResetColor(); //сброс цветной печати
-
             j++;
         }
 
         //Console.Write("\n");
-        Console.WriteLine( );
-        
+        Console.WriteLine( );        
         i++;
-
     }
 
-
 }
-
 double[,] twoDimArray = FillTwoDimArray(4, 6);
 PrintTwoDimArray(twoDimArray);
 Console.WriteLine( );
