@@ -33,7 +33,7 @@ int CalcDiagTwoDimArr(int[,] inputArray)
     while (i < inputArray.GetLength(0))
     {
         // складываем элементы массива находящиеся с одинаковыми индексами i=j=i
-        outSumDiaganal+=inputArray[i,i];        
+        outSumDiaganal += inputArray[i, i];
         i++;
     }
 
@@ -49,8 +49,6 @@ ConsoleColor[] col = new ConsoleColor[]{ConsoleColor.Black,ConsoleColor.Blue,Con
 void PrintColorTwoDimArray(int[,] inputArray)
 {
     int i = 0; int j = 0;
-
-
 
     while (i < inputArray.GetLength(0))
     {
@@ -69,7 +67,6 @@ void PrintColorTwoDimArray(int[,] inputArray)
 
 
 }
-
 
 // создаем массив чтобы вывести его из метода FillTwoDimArray с заданным размером массива
 int[,] twoDimArray = FillTwoDimArray(3, 4);
