@@ -70,7 +70,6 @@ void PrintColorTwoDimArray(int[,] inputArray)
         i++;
     }
 
-
 }
 // метод решения задачи
 int[,] UpdateTwoDimArray(int[,] inputArray)
