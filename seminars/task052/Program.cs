@@ -71,7 +71,6 @@ int[] ReverseSwapArray(int[] array)
     // передаем массив для возврата наверх для других методов
     return array;
 }
-
 // новому массиву testArray присваиваеем то что получилось из метода FillingArray на 17 элементов
 int[] testArray = FillingArray(17);
 //  из массива, который получился в методе ReverseNewArray из массива testArray
