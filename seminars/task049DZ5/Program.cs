@@ -17,7 +17,7 @@ int[] FillingArray()
     }
     return outArray;
 }
-// Метод подсчета положительных  значений
+// Метод подсчета четных  значений
 void ColculateTask(int[] outArray)
 {
     int i = 0;
@@ -27,7 +27,6 @@ void ColculateTask(int[] outArray)
         {
             resultCount++;
         }
-
         i++;
     }
 }
@@ -35,7 +34,6 @@ void ColculateTask(int[] outArray)
 void PrintResult()
 {
     Console.WriteLine(resultCount);
-
 }
 //Метод печатает массив
 void PrintIntArray(int[] inputArray)
