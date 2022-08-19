@@ -1,6 +1,7 @@
 ﻿// Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом
 //столбце.
 //=========================================================================================================
+
 // ​// метод для заполнения двумерного массива
 int[,] FillTwoDimArray(int countRow, int countColumn)
 {
@@ -10,6 +11,7 @@ int[,] FillTwoDimArray(int countRow, int countColumn)
     int[,] outArray = new int[countRow, countColumn];
     while (i < countRow)
     {
+
         j = 0;
         while (j < countColumn)
         {
@@ -68,7 +70,6 @@ ConsoleColor[] col = new ConsoleColor[]
  ConsoleColor.White,
  ConsoleColor.Yellow
 };
-
 void PrintColorTwoDimArray(int[,] inputArray)
 {
     int i = 0;
@@ -89,8 +90,7 @@ void PrintColorTwoDimArray(int[,] inputArray)
         i++;
     }
 }
-
-int[,] twoDimArray = FillTwoDimArray(6, 5);
+int[,] twoDimArray = FillTwoDimArray(6, 7);
 PrintColorTwoDimArray(twoDimArray);
 Console.Write($"\nCреднее арифметическое:\n");
 CalcAverageTwoDimArr(twoDimArray);
