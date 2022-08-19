@@ -75,20 +75,20 @@ int[] FreqmancyCollect(int[,] inputArray, int alphabetLength)
         while (j < inputArray.GetLength(0))
         {
             //Собираем частоту появления элементов
-            resultArray[inputArray[i,j]]++;
+            resultArray[inputArray[i, j]]++;
             j++;
         }
         i++;
+
     }
     return resultArray;
 }
-
 
 int[,] twoDimArray = FillTwoDimArray(3, 3);
 PrintTwoDimArray(twoDimArray);
 Console.WriteLine();
 
-int[] freqmancy = FreqmancyCollect(twoDimArray,10);
+int[] freqmancy = FreqmancyCollect(twoDimArray, 10);
 // программа не выводит алфавит цисел,но считает сколько раз число повторилось в массиве
 // первое число 0 ,второе 1
 PrintIntArray(freqmancy);
