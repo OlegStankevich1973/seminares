@@ -94,4 +94,3 @@ int[,] twoDimArray = FillTwoDimArray(6, 5);
 PrintColorTwoDimArray(twoDimArray);
 Console.Write($"\nCреднее арифметическое:\n");
 CalcAverageTwoDimArr(twoDimArray);
-// программа считает только таблицы с одинаковой длиной стороны и столбца
