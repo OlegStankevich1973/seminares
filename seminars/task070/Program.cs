@@ -48,20 +48,20 @@ void PrintTwoDimArray(int[,] inputArray)
 int[,] Update2_DArray(int[,] inputArray, int row, int column)
 {
     int[,] outArray = new int[inputArray.GetLength(0) - 1, inputArray.GetLength(1) - 1];
-    int i = 0; int j = 0;int k = 0; int m = 0;
+    int i = 0; int j = 0; int k = 0; int m = 0;
     while (i < inputArray.GetLength(0))
     {
-        j = 0;m = 0;
+        j = 0; m = 0;
         while (j < inputArray.GetLength(1))
         {
             if (i != row && j != column)
             {
                 outArray[k, m] = inputArray[i, j];
             }
-            if (j != column)m++;
+            if (j != column) m++;
             j++;
         }
-        if (i != row)k++;
+        if (i != row) k++;
         i++;
     }
     return outArray;
@@ -86,15 +86,13 @@ int[] FindMinElement(int[,] matrix)
     }
     return array;
 }
-
-
 int[,] twoDimArray = FillTwoDimArray(5, 6);
 PrintTwoDimArray(twoDimArray);
 Console.WriteLine();
 
 int[] indexes = FindMinElement(twoDimArray);
-Console.WriteLine(indexes[0]+" "+indexes[1]);
+Console.WriteLine(indexes[0] + " " + indexes[1]);
 
-int[,] buferTwoDimArray = Update2_DArray(twoDimArray,indexes[0],indexes[1]);
+int[,] buferTwoDimArray = Update2_DArray(twoDimArray, indexes[0], indexes[1]);
 PrintTwoDimArray(buferTwoDimArray);
 
