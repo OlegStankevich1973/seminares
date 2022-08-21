@@ -88,7 +88,7 @@ int[] FindMinElement(int[,] matrix)
 }
 
 
-int[,] twoDimArray = FillTwoDimArray(5, 5);
+int[,] twoDimArray = FillTwoDimArray(5, 6);
 PrintTwoDimArray(twoDimArray);
 Console.WriteLine();
 
