@@ -50,7 +50,7 @@ void CalcSumString(int[,] inputArray)
 {
     // задаем локальные переменные 
     int stringNum = 0;// номер строки
-    int maxNumSum = int.MinValue;//максимальная сумма
+    int minNumSum = int.MaxValue;//максимальная сумма
     int sumString = 0;//сумма строки
     int i = 0;//после прохода столбцов обнуляем строки
     // пробегаем по строкам (0 это количество строк)
@@ -67,19 +67,16 @@ void CalcSumString(int[,] inputArray)
             // изменяем столбцы
             j++;
         }
-        if (sumString > maxNumSum) // сравниваем максимальную сумму  
+        if (sumString < minNumSum) // сравниваем максимальную сумму  
         {
-            maxNumSum = sumString;//если сумма больше чем предыдущая записываем ее
+            minNumSum = sumString;//если сумма больше чем предыдущая записываем ее
             stringNum = i + 1;//увеличиваем номер строки на1 чтобы показать номер по счету реальный
         }
         Console.Write((sumString) + "; ");
         // переходим на другую строку
         i++;
     }
-
-    Console.WriteLine("Максимальная сумма элементов  строки, находится в {0}-й строке: {1}", stringNum, maxNumSum);
-
-
+    Console.WriteLine("Минимальная сумма элементов  строки, находится в {0}-й строке: {1}", stringNum, minNumSum);
 }
 int[,] twoDimArray = FillTwoDimArray(3, 4);
 PrintTwoDimArray(twoDimArray);
