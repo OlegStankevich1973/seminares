@@ -13,15 +13,12 @@ else
 {
     NaturalNamberPrinter(numberN, numberM);
 }
-
 // метод ввода с консоли
 int ReadData(string line)
 {
     Console.WriteLine(line);
     return int.Parse(Console.ReadLine());
 }
-
-
 // метод рекурсии
 void NaturalNamberPrinter(int m, int n)
 {
