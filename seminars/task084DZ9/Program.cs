@@ -9,29 +9,29 @@ int m = InputNumbers("Введите m: ");
 int n = InputNumbers("Введите n: ");
 int temp = m;
 // метод проверки какое вводимое число большеи замена их местами
-if (m > n) 
+if (m > n)
 {
-  m = n; 
-  n = temp;
+    m = n;
+    n = temp;
 }
 
-SumNumber(m, n, temp=0);
+SumNumber(m, n, temp = 0);
 
 void SumNumber(int m, int n, int sum)
 {
-  sum = sum + n;
-  if (n <= m)
-  {
-    Console.Write($"Сумма элементов= {sum} ");
-    return;
-  }
-  SumNumber(m, n - 1, sum);
+    sum = sum + n;
+    if (n <= m)
+    {
+        Console.Write($"Сумма элементов= {sum} ");
+        return;
+    }
+    SumNumber(m, n - 1, sum);
 }
 
-int InputNumbers(string input) 
+int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
