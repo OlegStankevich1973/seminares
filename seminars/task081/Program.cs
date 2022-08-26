@@ -45,20 +45,17 @@ int MyPow(int a, int b)
         return MyPow(a, b / 2) * MyPow(a, (b / 2) + 1);
     }
 }
-
 // 2 4
 // 1 2 4 out 2 *
 // 2 2 3 out 2 *
 // 3 2 2 out 2 *
 // 4 2 1 out 2
 
-
 int PowNumber(int a, int b)
 {
     if (b == 1) return a;
     return a * PowNumber(a, --b);
 }
-
 int ReadNumber(string text)
 {
     Console.Write(text);
