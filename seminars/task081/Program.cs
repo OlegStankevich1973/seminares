@@ -64,3 +64,4 @@ int ReadNumber(string text)
     Console.Write(text);
     return int.Parse(Console.ReadLine() ?? "");
 }
+
