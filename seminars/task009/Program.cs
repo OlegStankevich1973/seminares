@@ -1,4 +1,6 @@
-﻿string? inputLine = Console.ReadLine();
+﻿// Принимает число с панели и выводит позледнюю цифру вводимого числа
+// ==================================================================
+string? inputLine = Console.ReadLine();
 
 if (inputLine != null)
 {
